@@ -33,6 +33,7 @@ h1{
     padding: 10px 20px;
     border-radius: 50px;
     transition: 0.15s ease-in-out;
+    animation-delay: 1s;
 }
 
 .button:hover{
@@ -45,54 +46,31 @@ h1{
     background: #151616;
     color: #fff;
 }
-label {
-        display: none;
-        cursor: pointer;
-        font-size: 2em;
-        width: 26px;
-        padding-left: 20px;
-        z-index: 2;
-    
-    }
-#toggle{
-    display: none;
+
+.menu {
+    padding-top:15px;
+    height: 40px;
+    background: #151616;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
 }
 
-label,.menu{
-    position: fixed;
-    
-}
-
-    .menu {
-        padding-top:15px;
-        height: 40px;
-        background: #151616;
-        color: #fff;
-        text-align: center;
-        width: 100%;
-        z-index: 1;
-    }
-
-    .menu ul, .menu ul li{
+.menu ul, .menu ul li{
     display: inline;
 }
-    .menu a {
-        background: #151616;
-        color: #fff;
-        display: inline;
-        margin-left: 40px;
-        padding-left: 40px;
-        padding-right: 40px;
-        text-transform: uppercase;
-        font-size: 1.5em;
-     
-    }
-    #toggle:checked + .menu,. {
-        display: none;
-    }
 
-
-
+.menu a {
+    background: #151616;
+    color: #fff;
+    display: inline;
+    margin-left: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-transform: uppercase;
+    font-size: 1.5em; 
+}
 
 /* Home */
 
@@ -112,6 +90,7 @@ label,.menu{
 .text-home h1{
     font-size: 7em;
     padding-bottom: 0.2em;
+    animation-delay: 0.5s;
 }
 
 .text-home p{
@@ -124,6 +103,7 @@ label,.menu{
 }
 .text-home .padding{
     padding-right: 13em;
+    animation-delay: 2s;
 }
 
 .text-home .indic{
@@ -309,12 +289,6 @@ footer p{
 /* media queries */
 
 @media(max-width:769px){
-    label{
-        display: inline;
-        background: #151616;
-        width: 100%;
-        padding-bottom: 5px;
-    }
     .menu{
         display: none;
     }
